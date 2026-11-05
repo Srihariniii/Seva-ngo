@@ -1,0 +1,128 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Deep Forest Green (Rooted & Trustworthy)
+        forest: {
+          50: '#F4F7F4',
+          100: '#E4ECE5',
+          200: '#CADBD0',
+          300: '#A4C3AF',
+          400: '#75A585',
+          500: '#4D8561',
+          600: '#38694B',
+          700: '#2A513A',
+          800: '#213F2E',
+          900: '#1A3225',
+          950: '#0E1C14',
+        },
+        // Warm Terracotta & Clay (Earth & Passion)
+        terracotta: {
+          50: '#FDF6F3',
+          100: '#FCEBE3',
+          200: '#F8D4C5',
+          300: '#F1B29B',
+          400: '#E48666',
+          500: '#D9653B',
+          600: '#C24D25',
+          700: '#9E3C1D',
+          800: '#7E311A',
+          900: '#642817',
+        },
+        // Warm Sandstone & Cream (Organic Grounding)
+        sandstone: {
+          50: '#FAF8F5',
+          100: '#F5EFEB',
+          200: '#EBE2D7',
+          300: '#DCCEC0',
+          400: '#C5B29E',
+          500: '#A9947E',
+          600: '#8A7561',
+          700: '#6E5C4C',
+          800: '#524539',
+          900: '#382F27',
+        },
+        // Warm Charcoal / Bark for Body Text
+        bark: {
+          50: '#F7F6F5',
+          100: '#EFECE9',
+          200: '#DDD8D3',
+          300: '#BFB7AF',
+          400: '#968C81',
+          500: '#72685E',
+          600: '#584F46',
+          700: '#423B34',
+          800: '#2D2824',
+          900: '#1D1A17',
+        },
+        // Backward compatibility
+        brand: {
+          50: '#F4F7F4',
+          100: '#E4ECE5',
+          200: '#CADBD0',
+          300: '#A4C3AF',
+          400: '#75A585',
+          500: '#4D8561',
+          600: '#38694B',
+          700: '#2A513A',
+          800: '#213F2E',
+          900: '#1A3225',
+        },
+        seva: {
+          50: '#F4F7F4',
+          100: '#E4ECE5',
+          200: '#CADBD0',
+          300: '#A4C3AF',
+          400: '#75A585',
+          500: '#4D8561',
+          600: '#38694B',
+          700: '#2A513A',
+          800: '#213F2E',
+          900: '#1A3225',
+        },
+        earth: {
+          50: '#FAF8F5',
+          100: '#F5EFEB',
+          200: '#EBE2D7',
+          300: '#DCCEC0',
+          400: '#C5B29E',
+          500: '#A9947E',
+          600: '#8A7561',
+          700: '#6E5C4C',
+          800: '#524539',
+          900: '#382F27',
+        },
+        warm: {
+          50: '#FAF8F5',
+          100: '#F5EFEB',
+          200: '#EBE2D7',
+          300: '#DCCEC0',
+          400: '#C5B29E',
+          500: '#A9947E',
+          600: '#8A7561',
+          700: '#6E5C4C',
+          800: '#524539',
+          900: '#382F27',
+        }
+      },
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'Noto Sans Tamil', 'Mukta Malar', 'system-ui', 'sans-serif'],
+        tamil: ['Noto Sans Tamil', 'Mukta Malar', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        '2xs': '0 1px 2px 0 rgba(29, 26, 23, 0.04)',
+        'xs': '0 1px 3px 0 rgba(29, 26, 23, 0.06)',
+        'soft': '0 3px 12px -2px rgba(29, 26, 23, 0.06), 0 1px 4px -1px rgba(29, 26, 23, 0.03)',
+        'elevated': '0 10px 25px -4px rgba(29, 26, 23, 0.08), 0 4px 10px -2px rgba(29, 26, 23, 0.04)',
+        'terracotta': '0 6px 20px -3px rgba(217, 101, 59, 0.35)',
+        'forest': '0 6px 20px -3px rgba(42, 81, 58, 0.35)',
+      }
+    },
+  },
+  plugins: [],
+}

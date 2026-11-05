@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Tamil', 'Mukta Malar', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    @apply text-bark-800 bg-[#FAF7F2] antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight text-bark-900 font-bold;
+  }
+}
+
+@layer components {
+  /* Primary Action Button (Forest Green) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-forest-800 hover:bg-forest-900 active:bg-forest-950 rounded-xl shadow-xs transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  /* Vibrant Terracotta Action Button (Key CTAs & Donate) */
+  .btn-terracotta {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-bold text-white bg-terracotta-600 hover:bg-terracotta-700 active:bg-terracotta-800 rounded-xl shadow-terracotta transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terracotta-500 focus:ring-offset-2 disabled:opacity-50 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  /* Secondary Earth Button (Warm Cream / Stone) */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-bark-700 bg-sandstone-50 hover:bg-sandstone-100 border border-sandstone-300 rounded-xl shadow-2xs transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest-600 focus:ring-offset-2 disabled:opacity-50 hover:border-sandstone-400;
+  }
+
+  /* Accent Button (Sandstone / Clay outline) */
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-terracotta-700 bg-terracotta-50 hover:bg-terracotta-100 border border-terracotta-200 rounded-xl shadow-2xs transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terracotta-400 focus:ring-offset-2;
+  }
+
+  /* Organic Earth Card */
+  .card-ngo {
+    @apply bg-white rounded-2xl border border-sandstone-200/80 shadow-soft transition-all duration-200 overflow-hidden hover:shadow-elevated hover:border-sandstone-300;
+  }
+
+  /* Earth Input Field */
+  .input-field {
+    @apply w-full px-4 py-3 text-bark-800 bg-sandstone-50/60 border border-sandstone-300 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-forest-600 focus:border-forest-600 transition-all placeholder:text-sandstone-400 text-sm;
+  }
+
+  /* Warm Badge */
+  .badge-earth {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-forest-100/80 text-forest-800 border border-forest-200;
+  }
+
+  .badge-terracotta {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-terracotta-100 text-terracotta-800 border border-terracotta-200;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DCCEC0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5B29E;
+}
